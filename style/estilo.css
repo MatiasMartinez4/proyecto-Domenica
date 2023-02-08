@@ -2,6 +2,9 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: url(../img/fondo.webp);
+}
 .gridPadre {
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -81,12 +84,11 @@ footer {
 
 
 /*Productos*/
-.gridPadre {
+.gridProductos{
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(../img/fondo.webp);
     grid-template-areas: 
     "logo       h1          h1          men"
     "seccionA   seccionA    seccionA    seccionA"
@@ -122,4 +124,29 @@ display: grid;
 .card4{
     display: grid;
     grid-area: c4;
+}
+
+/*Preguntas frecuentes*/
+
+.gridPreguntas{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo   h1  men";
+
+}
+
+.contenedor{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.pregunta{
+    background-color: #D2EBF1ff;
+    width: 33.3%;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+text-align: justify;
 }
