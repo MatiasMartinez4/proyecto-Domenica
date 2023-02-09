@@ -35,13 +35,12 @@ background-color: #F1948A;
     background-color: #D98880;
 }
 
-  dropdown-center {
+  .dropdown-center {
     grid-area: men;
     width: 10px;
     height: 10px;
     display: grid;
     place-items: center;
-    background-color: aquamarine;        
     }
 
 
@@ -130,10 +129,10 @@ display: grid;
 
 .gridPreguntas{
     display: grid;
-    grid-template-columns: repeat(3, 33.3%);
+    grid-template-columns: repeat(4, 25%);
     grid-template-rows: auto;
     grid-template-areas: 
-    "logo   h1  men";
+    "logo   h1  h1   men";
 
 }
 
@@ -149,4 +148,49 @@ display: grid;
     margin: 5px;
     padding: 10px;
 text-align: justify;
+}
+
+/*Ubicacion.html*/
+
+.contenedor-ubicacion{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: auto;
+    gap: 5px;
+    grid-template-areas: 
+    "logo       h1          men"
+    "seccionA   seccionA    seccionA"
+    "mapa       mapa        mapa"
+    "footer     footer      footer"
+    ;
+}
+
+.mapa iframe{
+    margin-left: 20px;
+    border-radius: 10%;
+    grid-area: mapa;
+}
+
+/*Contacto.html*/
+.grid-contacto{
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo       h1          men"
+
+    "seccionA   seccionA    form"
+    
+    "footer     footer      footer"
+    ;
+}
+
+.formulario{
+    margin: 10px;
+    padding: 10px;
+    grid-area: form;
+}
+
+.mensaje{
+    height: 150px;
 }

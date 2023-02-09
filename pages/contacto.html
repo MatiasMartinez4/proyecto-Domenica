@@ -1,84 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domenica Contacto</title>
-<!--Bootstrap-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-<!--Hoja de estilos CSS-->
-<link rel="stylesheet" href="../style/estilo.css">
-<title>Domenica Productos</title></head>
-<body>
-    <img class="logo" src="../img/domenica.jpg" alt="Logo Domenica">
-        
-    <div class="d-grid" style="height: 100%;">
-      <div class="d-flex justify-content-center">
-          <div class="dropdown-center"> 
-              <button class="btn btn-secondary dropdown-toggle button" type="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Menu
-              </button>
-              <ul class="dropdown-menu"> 
-                  <li><a class="item" href="productos.html">Productos</a></li>
-                  <li><a class="item" href="locales.html">Ubicación</a></li>
-                  <li><a class="item" href="preguntas.html">Preguntas Frecuentes</a></li>
 
-              </ul>
-          </div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domenica Contacto</title>
+  <link rel="shortcut icon" href="../img/domenica.jpg" type="image/x-icon">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--Hoja de estilos CSS-->
+  <link rel="stylesheet" href="../style/estilo.css">
+
+</head>
+
+<body class="grid-contacto">
+
+  <div class="header">
+    <header>
+      <a href="../index.html">
+        <img class="logo" src="../img/domenica.jpg" alt="Inicio">
+      </a>
+    </header>
   </div>
 
-     
-    <br> <br>
-     
-    <h1>Formulario de Contacto</h1>
-    <br>
-    <div>
-        <p>Dejanos tu mensaje y te responderemos a la brevedad</p>
+  <div class="d-grid" style="height: 100%;">
+    <div class="d-flex justify-content-center">
+      <div class="dropdown-center">
+        <button class="btn btn-secondary dropdown-toggle button" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="item" href="productos.html">Productos</a></li>
+          <li><a class="item" href="locales.html">Ubicación</a></li>
+          <li><a class="item" href="preguntas.html">Preguntas Frecuentes</a></li>
+
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <div class="formulario">
 
-        <form  method="get"><div class="dropdown-center">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Centered dropdown
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="item" href="pages/productos.html">Productos</a></li>
-                <li><a class="item" href="pages/contacto.html">Contacto</a></li>
-                <li><a class="item" href="pages/locales.html">Ubicación</a></li>
-                <li><a class="item" href="pages/preguntas.html">Preguntas Frecuentes</a></li>
-            
-            </ul>
-          </div>
-    
-          <label for="Nombre y Apellido">Nombre y Apellido</label>
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido"> 
-          <label for="e-mail">e-mail</label>
-          <input type="email" name="correo" id="correo" placeholder="Introduzca su e-mail">
-          <label for="Telefono">Telefono</label>
-          <input type="tel" name="telefono" id="telefono" placeholder="sin 0 y sin 15" >
-          <label for="Mensaje">Mensaje</label>
-          <input type="text" name="mensaje" id="mensaje">
-         <input  type="submit" class="boton" value="Enviar consulta">
-         </form>
-     </div>
 
-    
 
-     <footer>
-        <p>Todos los derechos reservados <br> <a class="vinculos"
-             href="https://www.instagram.com/dpasteleriatuc/">Instagram</a></p>
-    </footer>
+  <h2 class="h1">Formulario de Contacto</h2>
 
-    <!--SCRIPT DE BOOTSTRAP-->
+  <div class="seccionA">
+    <p>Dejanos tu mensaje y te responderemos a la brevedad</p>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+
+
+
+
+
+
+
+  <div class="formulario">
+
+    <form method="get">
+      <label for="Nombre y Apellido"></label>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+      <br>
+      <label for="e-mail"></label>
+      <input type="email" name="correo" id="correo" placeholder="Introduzca su e-mail">
+      <br>
+      <label for="Telefono"></label>
+      <input type="tel" name="telefono" id="telefono" placeholder="sin 0 y sin 15">
+      <br>
+      <label for="Mensaje"></label>
+      <input class="mensaje" type="text" name="mensaje" id="mensaje">
+      <br>
+      <input type="submit" class="boton" value="Enviar consulta">
+    </form>
+  </div>
+
+
+
+  <footer>
+    <p>Todos los derechos reservados <br> <a class="vinculos"
+        href="https://www.instagram.com/dpasteleriatuc/">Instagram</a></p>
+  </footer>
+
+  <!--SCRIPT DE BOOTSTRAP-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 
 </body>
+
 </html>
