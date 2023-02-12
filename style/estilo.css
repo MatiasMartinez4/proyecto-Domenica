@@ -3,61 +3,30 @@
     box-sizing: border-box;
 }
 body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(../img/fondo.webp);
 }
 .gridPadre {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(../img/fondo.webp);
     grid-template-areas: 
-    "logo       h1          h1          men"
     "seccionA   seccionA    seccionB    seccionB"
     "seccionA   seccionA    seccionB    seccionB"
     "footer     footer      footer      footer"
     ;
 }
 
-    
-
-.header .logo{
-   grid-area: logo;
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    
+.boton-navbar{
+    color: pink;
 }
-.btn-secondary{
-background-color: #F1948A;
-}
-.button:hover{
-    background-color: #D98880;
-}
-
-  .dropdown-center {
-    grid-area: men;
-    width: 10px;
-    height: 10px;
-    display: grid;
-    place-items: center;
-    }
-
-
-
-
-.h1 {
-    text-align: center;
-    grid-area: h1;
-    align-content: center;
-}
-
 
 .seccionA {
 
     text-align:justify;
-    margin: 15px;
-    padding: 15px;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
     line-height: 28px;
     grid-area: seccionA;
     
@@ -70,71 +39,52 @@ background-color: #F1948A;
     max-width: 200%;
     width: 400px;
     height: 400px;
-margin: 20px;}
+ margin: 100px 10px 50px 60px;
+}
 
 
 footer {
     grid-area: footer;
     border: solid black 1px;
-    background-color: grey;
+    background-color: black;
     text-align: center;
+    color: pink;
 
+}
+.instagram{
+    width: 20px;
+    height: 20%;
 }
 
 
 /*Productos*/
 .gridProductos{
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     grid-template-areas: 
-    "logo       h1          h1          men"
-    "seccionA   seccionA    seccionA    seccionA"
-    "c1         c2          c3          c4"
-    "footer     footer      footer      footer"
+    "seccionA   carrousel"
+    "seccionA   carrousel"
+    "footer     footer"
     ;
     
 }
 
-.card .card-body{
-    text-align: center;
-    text-size-adjust: 14px;
-    padding: 10px;
-    margin: 10px;
+.img{
+    margin: 100px;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 20%;
+}
+.texto{
+    color: black;
+}
+.h2-carrousel-1{
+    color: antiquewhite;
 }
 
-.card1{
-display: grid;
-    grid-area: c1;
-
-}
-
-.card2{
-    display: grid;
-    grid-area: c2;
-}
-
-.card3{
-display: grid;
-    grid-area: c3;
-}
-
-.card4{
-    display: grid;
-    grid-area: c4;
-}
 
 /*Preguntas frecuentes*/
-
-.gridPreguntas{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "logo   h1  h1   men";
-
-}
 
 .contenedor{
     display: flex;
@@ -145,7 +95,8 @@ display: grid;
     background-color: #D2EBF1ff;
     width: 33.3%;
     border: 2px solid black;
-    margin: 5px;
+    margin: 10px;
+    margin-top: 50px;
     padding: 10px;
 text-align: justify;
 }
@@ -158,7 +109,6 @@ text-align: justify;
     grid-template-rows: auto;
     gap: 5px;
     grid-template-areas: 
-    "logo       h1          men"
     "seccionA   seccionA    seccionA"
     "mapa       mapa        mapa"
     "footer     footer      footer"
@@ -177,7 +127,7 @@ text-align: justify;
     grid-template-columns: repeat(3, 33.3%);
     grid-template-rows: auto;
     grid-template-areas: 
-    "logo       h1          men"
+    
 
     "seccionA   seccionA    form"
     

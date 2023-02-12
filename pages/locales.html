@@ -16,34 +16,37 @@
 <body class="contenedor-ubicacion">
 
     
-    <div class="header">
-        <header>
-            <a href="../index.html">
-                <img class="logo" src="../img/domenica.jpg" alt="Inicio">
-            </a>
-        </header>
-    </div>
-
-    <div class="d-grid" style="height: 100%;">
-        <div class="d-flex justify-content-center">
-            <div class="dropdown-center">
-                <button class="btn btn-secondary dropdown-toggle button" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Menu
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="item" href="contacto.html">Contacto</a></li>
-                    <li><a class="item" href="locales.html">Ubicación</a></li>
-                    <li><a class="item" href="preguntas.html">Preguntas Frecuentes</a></li>
-
-                </ul>
-            </div>
+    
+    <nav class="navbar  navbar-expand-lg bg-dark fixed-top menu" style="display: grid; grid-template-areas: header;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html" style="color: plu1;"> 
+              <img class="logo" src="../img/cup-cake.png" alt="Inicio" width="40" height="40" > Domenica
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: plu1;" aria-current="page" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: plu1;" aria-current="page" href="preguntas.html">Preguntas frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: plu1;" aria-current="page" href="locales.html">Ubicacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: plu1;" aria-current="page" href="contacto.html">Contacto</a>
+              </li>
+            </ul> 
+          </div>
         </div>
-    </div>
-        
+      </nav>
+
        
     
-    <h2 class="h1">Veni a Conocernos</h2>
+    <h1 class="h1">Nuestro Local</h1>
 
     <div class="seccionA">
         <p>Nuestra Patiserie esta ubicada en calle Juan Gregorio de Las Heras 435, en San Miguel de 
@@ -57,7 +60,7 @@
     </div>
    
     <footer>
-        <p>Todos los derechos reservados <br> <a class="vinculos" href="https://www.instagram.com/dpasteleriatuc/">Instagram</a></p>
+        <p>Todos los derechos reservados <br> <a class="vinculos" href="https://www.instagram.com/dpasteleriatuc/"><img class="instagram" src="../img/instagram.png" alt="Nuestro Instagram"></a></p>
     </footer>
 
     <!--SCRIPT DE BOOTSTRAP-->
