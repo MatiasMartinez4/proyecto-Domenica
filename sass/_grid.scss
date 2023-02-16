@@ -1,0 +1,37 @@
+.gridPadre {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "seccionA   seccionA    seccionB    seccionB" 
+    "seccionA   seccionA    seccionB    seccionB" 
+    "footer     footer      footer      footer";
+}
+.gridProductos {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "seccionA   carrousel" 
+    "seccionA   carrousel" 
+    "footer     footer";
+}
+
+.contenedor-ubicacion {
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: auto;
+	gap: 5px;
+	grid-template-areas: 
+    "seccionA   Mapa" 
+    "footer     footer";
+}
+
+.grid-contacto {
+	display: grid;
+	grid-template-columns: repeat(3, 33.3%);
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "seccionA   seccionA    form" 
+    "footer     footer      footer";
+}

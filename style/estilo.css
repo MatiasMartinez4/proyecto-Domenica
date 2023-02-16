@@ -1,212 +1,168 @@
-
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(to left, #2c3e50, #bdc3c7);
+@import "grid";
+* {
+  box-sizing: border-box;
 }
 
-/*Index.html*/
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to left, #2c3e50, #bdc3c7);
+}
+
 .gridPadre {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "seccionA   seccionA    seccionB    seccionB"
-    "seccionA   seccionA    seccionB    seccionB"
-    "footer     footer      footer      footer"
-    ;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  grid-template-areas: "seccionA   seccionA    seccionB    seccionB" "seccionA   seccionA    seccionB    seccionB" "footer     footer      footer      footer";
 }
 
-@media (max-width: 576px){
- .gridPadre{
 
-    grid-template-columns: repeat(1, 100%);
-grid-template-rows: auto;
-grid-area:
-"seccionA"
-"footer"
-;
-
- }
-.seccionA{
-    margin: 5px;
-    padding: 5px;
-}
-
- .seccionB{
-    display: none;
- }
-}
-
-.boton-navbar{
-    color: pink;
-}
 
 .seccionA {
-
-    text-align:justify;
-    margin-top: 100px;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 28px;
-    grid-area: seccionA;
-    
-    
-
+  text-align: justify;
+  margin-top: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 28px;
+  grid-area: seccionA;
 }
+
 .torta1 {
-    grid-area: seccionB;
-    border-radius: 100%;
-    max-width: 200%;
-    width: 400px;
-    height: 400px;
- margin: 100px 10px 50px 60px;
+  grid-area: seccionB;
+  border-radius: 100%;
+  max-width: 200%;
+  width: 400px;
+  height: 400px;
+  margin: 100px 10px 50px 60px;
 }
 
+.imgmedia {
+  grid-area: barra;
+}
 
 footer {
-    grid-area: footer;
-    border: solid black 1px;
-    background-color: black;
-    text-align: center;
-    color: pink;
-
-}
-.instagram{
-    width: 20px;
-    height: 20%;
+  grid-area: footer;
+  border: solid black 1px;
+  background-color: black;
+  text-align: center;
+  color: pink;
 }
 
+.instagram {
+  width: 20px;
+  height: 20%;
+}
 
-/*Productos*/
-.gridProductos{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
+.gridProductos {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  grid-template-areas: "seccionA   carrousel" "seccionA   carrousel" "footer     footer";
+}
+
+.img {
+  margin: 100px;
+  width: fit-content;
+  height: 300px;
+  border-radius: 20%;
+}
+
+.texto {
+  color: black;
+}
+
+.h2-carrousel-1 {
+  color: antiquewhite;
+}
+
+.contenedor {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.pregunta {
+  background: linear-gradient(to left, #2980b9, #6dd5fa);
+  width: 33.3%;
+  border: 2px solid black;
+  margin: 10px;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.contenedor-ubicacion {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: auto;
+  gap: 5px;
+  grid-template-areas: "seccionA   Mapa" "footer     footer";
+}
+
+.mapa iframe {
+  margin-top: 80px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+  border-radius: 10%;
+  grid-area: mapa;
+}
+
+.grid-contacto {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: auto;
+  grid-template-areas: "seccionA   seccionA    form" "footer     footer      footer";
+}
+
+.formulario {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 10px;
+  grid-area: form;
+}
+
+.mensaje {
+  height: 150px;
+}
+
+@media (max-width: 576px) {
+  .gridPadre {
+    grid-template-columns: repeat(1, 100%);
     grid-template-rows: auto;
-    grid-template-areas: 
-    "seccionA   carrousel"
-    "seccionA   carrousel"
-    "footer     footer"
-    ;
-    
+    grid-area: "seccionA" "footer";
+  }
+  .seccionA {
+    margin: 5px;
+    padding: 5px;
+  }
+  .seccionB {
+    display: none;
+  }
 }
-
-.img{
-    margin: 100px;
-    max-width: 400px;
-    max-height: 300px;
-    border-radius: 20%;
-}
-.texto{
-    color: black;
-}
-.h2-carrousel-1{
-    color: antiquewhite;
-}
-
-@media (max-width:576px) {
-    
-    .gridProductos{
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "seccionA"
-        "carrousel"
-        "footer"
-        ;
-    }
-.img{
+@media (max-width: 576px) {
+  .gridProductos {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: auto;
+    grid-template-areas: "seccionA" "carrousel" "footer";
+  }
+  .img {
     margin: 50px;
-}    
-
+  }
 }
-
-
-
-/*Preguntas frecuentes*/
-
-.contenedor{
+@media (max-width: 576px) {
+  .contenedor {
     display: flex;
-    flex-flow: row nowrap;
-}
-
-.pregunta{
-    background-color: #D2EBF1ff;
-    width: 33.3%;
-    border: 2px solid black;
-    margin: 10px;
-    margin-top: 50px;
-    padding: 10px;
-text-align: justify;
-}
-
-@media(max-width: 576px) {
-    .contenedor{
-        display: flex;
-        flex-direction: column;
-       
-    }
-    .pregunta {
-        width: auto;
-        margin: 20px;
-        margin-top: 20px;
-        padding: 20px;
-        
-    }
-
-    .h1{
-        margin-top: 80px;
-        text-align: center;
-    }
-}
-
-/*Ubicacion.html*/
-
-.contenedor-ubicacion{
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: auto;
-    gap: 5px;
-    grid-template-areas: 
-    "seccionA   Mapa"
-    "footer     footer"
-    ;
-}
-
-
-.mapa iframe{
+    flex-direction: column;
+  }
+  .pregunta {
+    width: auto;
+    margin: 20px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .h1 {
     margin-top: 80px;
-    margin-left: 20px;
-    margin-bottom: 25px;
-    border-radius: 10%;
-    grid-area: mapa;
+    text-align: center;
+  }
 }
 
-/*Contacto.html*/
-.grid-contacto{
-    display: grid;
-    grid-template-columns: repeat(3, 33.3%);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    
-
-    "seccionA   seccionA    form"
-    
-    "footer     footer      footer"
-    ;
-}
-
-.formulario{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    padding: 10px;
-    grid-area: form;
-}
-
-.mensaje{
-    height: 150px;
-    
-}
+/*# sourceMappingURL=estilo.css.map */
