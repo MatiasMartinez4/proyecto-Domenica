@@ -4,136 +4,176 @@ $color_3: antiquewhite;
 $font-family_1: Verdana, Geneva, Tahoma, sans-serif;
 $background-color_1: black;
 
-/*Index.html*/
-/*Productos*/
-/*Preguntas frecuentes*/
-/*Ubicacion.html*/
-/*Contacto.html*/
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-	font-family: $font-family_1;
-	background: linear-gradient(to left, #2c3e50, #bdc3c7);
+    font-family: $font-family_1;
+    background: linear-gradient(to left, #2c3e50, #bdc3c7);
 }
 
-.boton-navbar {
-	color: $color_1;
-}
+
 .seccionA {
-	text-align: justify;
-	margin-top: 100px;
-	margin-left: 20px;
-	margin-right: 20px;
-	line-height: 28px;
-	grid-area: seccionA;
+    text-align: justify;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 28px;
+    grid-area: seccionA;
 }
 .torta1 {
-	grid-area: seccionB;
-	border-radius: 100%;
-	max-width: 200%;
-	width: 400px;
-	height: 400px;
-	margin: 100px 10px 50px 60px;
+    grid-area: seccionB;
+    border-radius: 100%;
+    max-width: 200%;
+    width: 400px;
+    height: 400px;
+    margin: 100px 10px 50px 60px;
 }
 .imgmedia {
-	grid-area: barra;
+    grid-area: barra;
 }
 footer {
-	grid-area: footer;
-	border: solid black 1px;
-	background-color: $background-color_1;
-	text-align: center;
-	color: $color_1;
+    grid-area: footer;
+    border: solid black 1px;
+    background-color: $background-color_1;
+    text-align: center;
+    color: $color_1;
 }
 .instagram {
-	width: 20px;
-	height: 20%;
+    width: 20px;
+    height: 20%;
 }
 
 .img {
-	margin: 100px;
-	width: fit-content;
-	height: 300px;
-	border-radius: 20%;
+    margin: 100px;
+    width: fit-content;
+    height: 300px;
+    border-radius: 20%;
 }
 .texto {
-	color: $color_2;
+    color: $color_2;
 }
 .h2-carrousel-1 {
-	color: $color_3;
+    color: $color_3;
 }
 .contenedor {
-	display: flex;
-	flex-flow: row nowrap;
+    display: flex;
+    flex-flow: row nowrap;
 }
 .pregunta {
-	background: linear-gradient(to left, #2980b9, #6dd5fa);
-	width: 33.3%;
-	border: 2px solid black;
-	margin: 10px;
-	margin-top: 50px;
-	padding: 10px;
-	text-align: justify;
+    background: linear-gradient(to left, #2980b9, #6dd5fa);
+    width: 33.3%;
+    border: 2px solid black;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10px;
+    text-align: justify;
 }
 
 .mapa {
-	iframe {
-		margin-top: 80px;
-		margin-left: 20px;
-		margin-bottom: 25px;
-		border-radius: 10%;
-		grid-area: mapa;
-	}
+    iframe {
+        margin-top: 80px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+        border-radius: 10%;
+        grid-area: mapa;
+    }
 }
 
 .formulario {
-	margin-top: 100px;
-	margin-bottom: 50px;
-	padding: 10px;
-	grid-area: form;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 10px;
+    grid-area: form;
 }
 .mensaje {
-	height: 150px;
+    height: 150px;
 }
+
 @media (max-width: 576px) {
-	.gridPadre {
-		grid-template-columns: repeat(1, 100%);
-		grid-template-rows: auto;
-		grid-area: "seccionA" "footer";
-	}
-	.seccionA {
-		margin: 5px;
-		padding: 5px;
-	}
-	.seccionB {
-		display: none;
-	}
+    .gridPadre {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+        grid-area: 
+        "seccionA" 
+        "footer";
+    }
+    .seccionA {
+        margin: 5px;
+        padding: 5px;
+        margin: auto;
+    }
+    .seccionB {
+        display: none;
+    }
+    .contenedor-ubicacion {
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "seccionA" 
+        "mapa" 
+        "footer";
+    }
+    iframe {
+        width: 80%;
+    }
+    .grid-contacto {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "seccionA" 
+        "form" 
+        "footer";
+    }
+    .formulario {
+        display: grid;
+        border: 2px solid #0a3b6c;
+        margin: 10px;
+        justify-items: center;
+        align-items: center;
+    }
 }
 @media (max-width:576px) {
-	.gridProductos {
-		display: grid;
-		grid-template-columns: repeat(1, 100%);
-		grid-template-rows: auto;
-		grid-template-areas: "seccionA" "carrousel" "footer";
-	}
-	.img {
-		margin: 50px;
-	}
+    .gridProductos {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "seccionA" 
+        "carrousel" 
+        "footer";
+    }
+    .seccionA{
+margin-top: 20%;
+margin-left: 5%;
+margin-right: 5%;
+
+    }
+    .img {
+        margin: 50px;
+    }
 }
-@media (max-width: 576px) {
-	.contenedor {
-		display: flex;
-		flex-direction: column;
-	}
-	.pregunta {
-		width: auto;
-		margin: 20px;
-		margin-top: 20px;
-		padding: 20px;
-	}
-	.h1 {
-		margin-top: 80px;
-		text-align: center;
-	}
+@media (max-width: 1000px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    .pregunta {
+        width: auto;
+        margin: 20px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .h1 {
+        margin-top: 80px;
+        text-align: center;
+    }
 }
+
+
+
+
+
