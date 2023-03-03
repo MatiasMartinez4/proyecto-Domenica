@@ -22,7 +22,7 @@
    
   <nav class="navbar  navbar-expand-lg bg-dark fixed-top menu" style="display: grid; grid-template-areas: header;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html" style="color: plum;"> 
+      <a class="navbar-brand" href="../index.html" > 
           <img class="logo" src="../img/cup-cake.png" alt="Inicio" width="40" height="40" > Domenica
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,16 +31,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" style="color: plum;" aria-current="page" href="productos.html">Productos</a>
+            <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="color: plum;" aria-current="page" href="preguntas.html">Preguntas frecuentes</a>
+            <a class="nav-link active" aria-current="page" href="preguntas.html">Preguntas frecuentes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="color: plum;" aria-current="page" href="locales.html">Ubicacion</a>
+            <a class="nav-link active" aria-current="page" href="locales.html">Ubicacion</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="color: plum;" aria-current="page" href="contacto.html">Contacto</a>
+            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
           </li>
         </ul> 
       </div>
@@ -52,9 +52,9 @@
 
   <div class="seccionA">
     <h1 class="h1">Formulario de Contacto</h1>
-    <br>
-    <br>
-    <p>Dejanos tu mensaje y te responderemos a la brevedad</p>
+    <p> 
+      Hola,Dejanos tu mensaje y comenentanos un poco sobre tu evento y la cantidad de personas que asistiran. Nos pondremos en contacto con vos para crear un presupuesto en base lo que buscas
+    </p>
   </div>
 
 
@@ -62,27 +62,42 @@
   <div class="formulario">
 
     <form method="get">
-      <label for="Nombre y Apellido"></label>
-      <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
-      <br>
-      <label for="e-mail"></label>
-      <input type="email" name="correo" id="correo" placeholder="Introduzca su e-mail">
-      <br>
-      <label for="Telefono"></label>
-      <input type="tel" name="telefono" id="telefono" placeholder="sin 0 y sin 15">
-      <br>
-      <label for="Mensaje"></label>
-      <input class="mensaje" type="text" name="mensaje" id="mensaje">
-      <br>
-      <input type="submit" class="boton" value="Enviar consulta">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Diaz">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="juan_diaz@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="555-056879">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="San Miguel de Tucuman">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Tu mensaje</label>
+        <textarea class="form-control" placeholder="Contanos sobre tu evento." id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
     </form>
   </div>
 
 
 
   <footer>
-    <p>Todos los derechos reservados <br> <a class="vinculos"
-        href="https://www.instagram.com/dpasteleriatuc/"><img class="instagram" src="../img/instagram.png" alt="Nuestro Instagram"></a></p>
+    <p>Todos los derechos reservados  </p>
+    <a class="vinculos"
+        href="https://www.instagram.com/dpasteleriatuc/"><img class="instagram" src="../img/instagram.png" alt="Nuestro Instagram"></a>
   </footer>
 
   <!--SCRIPT DE BOOTSTRAP-->

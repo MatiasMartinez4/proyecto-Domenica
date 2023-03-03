@@ -1,18 +1,90 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap");
+/*Index.html*/
+/*Productos*/
+/*Preguntas frecuentes*/
+/*Ubicacion.html*/
+/*Contacto.html*/
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to left, #2c3e50, #bdc3c7);
+  font-family: merienda, sans-serif;
+  background-image: url(../img/estasi.jpg);
+  /*background: linear-gradient(to left, #2c3e50, #bdc3c7);*/
 }
 
 .gridPadre {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: auto;
-  grid-template-areas: "seccionA   seccionA    seccionB    seccionB" "seccionA   seccionA    seccionB    seccionB" "footer     footer      footer      footer";
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  min-height: 120vh;
+}
+
+/*display: grid;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: auto;
+	grid-template-areas: 
+    "index 		index		index		index"
+    "footer     footer      footer      footer";
+}
+*/
+.f-index {
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  padding: 5px;
+}
+.f-index .instagram {
+  align-content: end;
+  margin: 10px;
+  width: 30px;
+}
+
+.index {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.index .h1-index {
+  background-color: rgba(248, 249, 250, 0.8);
+  border: 2px solid black;
+  width: 600px;
+  margin: 50px;
+  padding: 50px;
+  text-align: center;
+  color: black;
+  transition: all 4s;
+}
+
+.h1-index:hover {
+  width: 1000px;
+  border: 3px solid grey;
+  background-color: rgba(208, 82, 155, 0.8);
+}
+
+.transicion {
+  flex-direction: column;
+  align-content: center;
+  margin-top: 21%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-size: 18px;
+  background-color: rgba(248, 249, 250, 0.8);
+  border: 2px solid black;
+  width: 600px;
+  height: 100px;
+  padding: 15px;
+  color: black;
 }
 
 .boton-navbar {
@@ -21,20 +93,17 @@ body {
 
 .seccionA {
   text-align: justify;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 30px;
+  padding: 15px;
   line-height: 28px;
   grid-area: seccionA;
-}
-
-.torta1 {
-  grid-area: seccionB;
-  border-radius: 100%;
-  max-width: 200%;
-  width: 400px;
-  height: 400px;
-  margin: 100px 10px 50px 60px;
+  background-color: rgba(248, 249, 250, 0.8);
+  font-size: 18px;
+  word-spacing: 5px;
+  line-height: 35px;
 }
 
 footer {
@@ -42,7 +111,7 @@ footer {
   border: solid black 1px;
   background-color: black;
   text-align: center;
-  color:pink;
+  color: pink;
 }
 
 .instagram {
@@ -95,13 +164,28 @@ footer {
   grid-template-areas: "seccionA   mapa" "footer     footer";
 }
 
-.mapa iframe {
+.mapa {
   margin-top: 80px;
   margin-left: 20px;
   margin-bottom: 25px;
   border-radius: 10%;
   grid-area: mapa;
   width: 80%;
+}
+
+.nav-link .active {
+  box-shadow: 0px 10px 0px #bdc3c7;
+}
+
+.navbar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #339989;
+}
+
+.active {
+  color: #339989;
 }
 
 .grid-contacto {
@@ -112,80 +196,16 @@ footer {
 }
 
 .formulario {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 30px;
   padding: 10px;
   grid-area: form;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f8f9fa;
 }
 
 .mensaje {
   height: 150px;
-}
-
-@media (max-width: 576px) {
-  .gridPadre {
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: auto;
-    grid-area: "seccionA" "footer";
-  }
-  .seccionA {
-    margin: 5px;
-    padding: 5px;
-    margin: auto;
-  }
-  .seccionB {
-    display: none;
-  }
-  .contenedor-ubicacion {
-    display: grid;
-    gap: 0;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: auto;
-    grid-template-areas: "seccionA" "mapa" "footer";
-  }
-  iframe {
-    width: 80%;
-  }
-  .grid-contacto {
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: auto;
-    grid-template-areas: "seccionA" "form" "footer";
-  }
-  .formulario {
-    display: grid;
-    border: 2px solid #0a3b6c;
-    margin: 10px;
-    justify-items: center;
-    align-items: center;
-  }
-}
-@media (max-width: 576px) {
-  .gridProductos {
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: auto;
-    grid-template-areas: "seccionA" "carrousel" "footer";
-  }
-  .img {
-    margin: 50px;
-  }
-}
-@media (max-width: 576px) {
-  .contenedor {
-    display: flex;
-    flex-direction: column;
-  }
-  .pregunta {
-    width: auto;
-    margin: 20px;
-    margin-top: 20px;
-    padding: 20px;
-  }
-  .h1 {
-    margin-top: 80px;
-    text-align: center;
-  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
